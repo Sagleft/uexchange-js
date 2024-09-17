@@ -21,7 +21,8 @@ async function getRate() {
         const crpUsdtPair = pairs.find(pair => pair.pair.pair === 'crp_usdt');
 
         if (crpUsdtPair) {
-            console.log('CRP/USDT rate is', crpUsdtPair);
+            const closePrice = crpUsdtPair.data_market.close;
+            console.log('CRP/USDT rate is', closePrice);
         } else {
             console.log('Pair crp_usdt not found.');
         }
