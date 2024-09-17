@@ -10,7 +10,33 @@ function argsInUrl(method){
     return method === 'GET';
 }
 
-export default class CryptonAPI{
+function transportCORS(method, url, body){
+    const options = {
+        method,
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+    };
+    if(body) options.body = body;
+    return fetch('https://cors.io/?' + url, options).then(v => v.text());
+}
+
+function transport(method, url, body){
+    const options = {
+        method,
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+    };
+    if(body) options.body = body;
+    return fetch(url, options).then(v => v.text());
+}
+
+function saveToken(token){
+    document.cookie = `auth_token=${token}`;
+}
+
+class CryptonAPI{
     #transport
     #saveToken
 
@@ -67,7 +93,7 @@ export default class CryptonAPI{
         return this.#call('market/cancel', 'POST', { order_id: orderId });
     }
 
-    pairs(){
+    async pairs(){
         return this.#call('market/pairs', 'GET');
     }
 

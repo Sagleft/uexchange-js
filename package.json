@@ -1,0 +1,30 @@
+{
+  "name": "uexchange",
+  "version": "1.0.0",
+  "description": "Crypton Exchange API wrapper written in Javascript",
+  "main": "crypton-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sagleft/uexchange-js.git"
+  },
+  "keywords": [
+    "utopia-api",
+    "utopia-p2p",
+    "utopia-ecosystem",
+    "utopia",
+    "crypton",
+    "crp.is",
+    "crp-is",
+    "crypton-exchange",
+    "utopia-crypton"
+  ],
+  "author": "Digital718",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sagleft/uexchange-js/issues"
+  },
+  "homepage": "https://github.com/Sagleft/uexchange-js#readme"
+}
