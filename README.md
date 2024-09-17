@@ -6,6 +6,15 @@
 - Bypass CORS even when used locally.
 - Connecting directly to the CRP.is API.
 
+### Who is this solution for:
+
+- If you want to build a web application that works with the API of the anonymous exchange CRP.is
+- If you want to improve your API skills.
+- When you create your own trading bot or trading terminal.
+- If you are building a WEB3 application that requires stock exchange data.
+- When you create your own service that accepts payments in Crypton or UUSD.
+- When you create your own crypto exchange.
+
 ## Use from CDN
 
 URL: `https://cdn.jsdelivr.net/gh/Sagleft/uexchange-js@v1.1.0/crypton-api.js`
