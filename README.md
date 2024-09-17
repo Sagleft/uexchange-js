@@ -1,6 +1,11 @@
 
 ![logo](logo.png)
 
+## Features
+
+- Bypass CORS even when used locally.
+- Connecting directly to the CRP.is API.
+
 ## Usage example
 
 ```js
