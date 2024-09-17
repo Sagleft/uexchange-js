@@ -6,6 +6,16 @@
 - Bypass CORS even when used locally.
 - Connecting directly to the CRP.is API.
 
+## Use from CDN
+
+URL: `https://cdn.jsdelivr.net/gh/Sagleft/uexchange-js@v1.1.0/crypton-api.js`
+
+```
+<script src="https://cdn.jsdelivr.net/gh/Sagleft/uexchange-js@v1.1.0/crypton-api.js"></script>
+```
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
 ## Usage example
 
 ```js
